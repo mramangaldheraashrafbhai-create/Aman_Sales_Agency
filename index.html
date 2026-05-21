@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aman Sales Agency</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="top-bar">
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+
+    <div class="logo-title">
+      <img src="Logo.jpeg" alt="Logo" class="logo-img">
+      <div class="site-title">Aman Sales Agency</div>
+    </div>
+
+    <!-- Search Box -->
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Search Aman Sales Agency">
+      <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <!-- Account / Orders / Cart -->
+    <div class="nav-right">
+      <div class="nav-option">
+        <span>Hello, sign in</span><br>
+        <strong>Account & Lists</strong>
+      </div>
+      <div class="nav-option">
+        <span>Returns</span><br>
+        <strong>& Orders</strong>
+      </div>
+      <div class="nav-cart">
+        <i class="fa-solid fa-cart-shopping"></i> Cart
+      </div>
+    </div>
+  </header>
+
+  <!-- Shop Section -->
+  <div class="shop-section">  
+    <div class="box">  
+        <div class="box-content">  
+            <h2>Jeera</h2>  
+            <div class="box-img" style="background-image: url('box1_image.jpeg');"></div>  
+            <a href="Jera.html">See more</a>  
+          </div>  
+        </div>  
+        <div class="box">  
+          <div class="box-content">  
+            <h2>Clear Lemon</h2>  
+            <div class="box-img" style="background-image: url('box2_image.jpeg');"></div>  
+            <a href="Sprite.html">See more</a>    
+          </div>  
+        </div>  
+        <div class="box">  
+          <div class="box-content">  
+            <h2>Orange</h2>  
+            <div class="box-img" style="background-image: url('box3_image.jpeg');"></div>  
+            <a href="Orange.html">See more</a>    
+          </div>  
+        </div>  
+        <div class="box">  
+          <div class="box-content">  
+            <h2>Mango</h2>  
+            <div class="box-img" style="background-image: url('box4_image.jpeg');"></div>  
+            <a href="Mango.html">See more</a>    
+        </div>  
+    </div>
+  </div>
+
+  <!-- Side Menu -->
+  <nav id="side-menu" class="side-menu">
+    <div class="close-btn" onclick="goHome()">
+      <i class="fa-solid fa-arrow-left"></i>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)">Product</a>
+        <ul class="submenu">
+          <li><a href="Soda.html">Soda</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="Order.html">Order</a>
+        <ul class="submenu"></ul>
+      </li>
+      <!-- ✅ સુધારેલ Contact link -->
+      <li><a href="Contact.html">Contact</a></li>     
+      <li><a href="Create Account.html">Create Account</a></li>
+    </ul>
+  </nav>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <div class="footer-about">
+        <p>
+          Aman Sales Agency is a 15-year-old sales agency with a proven track record of excellence.
+          Over the years, it has established a strong presence in the market by delivering reliable services and high-quality products.
+          The agency is recognized for its commitment to customer satisfaction, integrity, and long-term business partnerships.
+        </p> 
+        <br>
+        <p><strong>Aman Sales Agency</strong></p>
+
+        <div class="add-icon address"><i class="fa-solid fa-location-dot"></i> Aman Tower, Sarangpur Road, Mohammad Nager 1</div>
+        <div class="add-icon city"><i class="fa-solid fa-city"></i> City: Botad</div>
+        <div class="add-icon dist"><i class="fa-solid fa-map"></i> Dist: Botad</div>
+        <div class="add-icon state"><i class="fa-solid fa-flag"></i> State: Gujarat</div>
+        <div class="add-icon country"><i class="fa-solid fa-earth-asia"></i> Country: India</div>
+        <div class="add-icon phone"><i class="fa-solid fa-phone"></i> +91 9510233419</div>
+        <div class="add-icon email"><i class="fa-solid fa-envelope"></i> care@amangaldhera331@gmail.com</div>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>Products
+            <ol>
+              <li><a href="Soda.html">Soda</a></li>
+            </ol>
+          </li>
+          <li><a href="Order.html">Order</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="#">Career</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-products">
+        <h3>Products</h3>
+        <ul>
+          <li>Jeera</li>
+          <li>Clear Lemon</li>
+          <li>Orange</li>
+          <li>Mango</li>
+        </ul>
+        <p><strong>Working Hours:</strong><br>
+          Mon–Sat: 9am to 7pm<br>
+          Sunday Closed
+        </p>
+      </div>
+
+      <div class="footer-follow">
+        <h3>Follow Us</h3>
+        <p>Join Aman Sales Agency Family</p>
+        <div class="social-links">
+
+          <!-- WhatsApp -->
+          <div class="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> Join WhatsApp
+          </div>
+
+          <!-- Instagram -->
+          <div class="instagram">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </div>
+
+          <!-- Facebook -->
+          <div class="facebook">
+            <i class="fa-brands fa-facebook"></i> Facebook
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 All Rights Reserved Aman Sales Agency</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("side-menu").classList.toggle("open");
+    }
+    function goHome() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

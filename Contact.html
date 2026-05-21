@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Contact Us</h2>
+
+    <!-- Form action points to Contact.php -->
+    <form action="Contact.php" method="POST" class="contact-form">
+      <label for="name">Full Name</label>
+      <input type="text" name="name" required placeholder="Enter your full name">
+
+      <label for="email">Email</label>
+      <input type="email" name="email" required placeholder="Enter your email">
+
+      <label for="phone">Phone</label>
+      <input type="text" name="phone" placeholder="Enter your phone number">
+
+      <label for="message">Message</label>
+      <textarea name="message" rows="4" required placeholder="Type your message"></textarea>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <a href="index.html" class="back-home">← Back to Home</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.register-box {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  width: 320px;
+}
+
+h2 {
+  text-align: center;
+  color: #0984e3;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #0984e3;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #74b9ff;
+}
+
+.login-btn {
+  background-color: #636e72;
+}
+
+.login-btn:hover {
+  background-color: #b2bec3;
+}
+
+/* 🔴/🟢 Message Style */
+.message {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  min-height: 20px;
+  transition: opacity 0.5s ease;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+  .register-box {
+    width: 90%;
+    padding: 20px;
+  }
+}

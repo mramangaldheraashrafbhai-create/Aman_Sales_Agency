@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soda Product</title>
+  <link rel="stylesheet" href="AllSoda.css">
+</head>
+<body>
+  <!-- 🔙 Back Button -->
+  <a href="index.html" class="back-btn">🔙</a>
+
+  <!-- ✅ Main Product Section -->
+  <main class="product-page">
+    <div class="product-img">
+      <img src="box1_image.jpeg" alt="Soda Product">
+    </div>
+
+    <div class="product-details">
+      <h1>Soda Drink 200ml (Cool & Fresh)</h1>
+      <p>ગાલા નો ભાવ: ₹170 (નંગ 24)</p>
+      <!-- <p class="rating">⭐ 4.2 (120 Reviews)</p> -->
+      <p class="price">₹170 <span class="offer">20% OFF</span></p>
+      <p class="desc">
+        Refreshing soda drink, perfect for parties and daily use. 
+        200ml bottle with great taste and quality.
+      </p>
+
+      <label for="qty">Quantity:</label>
+      <select id="qty">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+
+      <div class="btn-group">
+        <button id="addCart">Add to Cart</button>
+        <button id="buyNow">Buy Now</button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("addCart").onclick = function() {
+      alert("Item added to cart!");
+    };
+    document.getElementById("buyNow").onclick = function() {
+      alert("Proceeding to checkout...");
+    };
+  </script>
+</body>
+</html>

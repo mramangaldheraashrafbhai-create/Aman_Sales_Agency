@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Page</title>
+  <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+  <div class="register-box">
+    <h2>Register</h2>
+
+    <!-- 🔴/🟢 Message Box -->
+    <p id="messageBox" class="message"></p>
+
+    <form id="registerForm">
+      <label>Username</label>
+      <input type="text" id="username" placeholder="Enter Username">
+
+      <label>First Name</label>
+      <input type="text" id="firstName" placeholder="Enter First Name">
+
+      <label>Last Name</label>
+      <input type="text" id="lastName" placeholder="Enter Last Name">
+
+      <label>Password</label>
+      <input type="password" id="password" placeholder="Enter Password">
+
+      <label>Confirm Password</label>
+      <input type="password" id="confirmPassword" placeholder="Confirm Password">
+
+      <button type="button" id="registerBtn">Register</button>
+      <button type="button" class="login-btn" id="loginBtn">Login</button>
+    </form>
+  </div>
+
+  <script src="Register.js"></script>
+</body>
+</html>

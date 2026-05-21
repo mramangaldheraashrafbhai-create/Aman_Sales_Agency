@@ -1,0 +1,177 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;700&display=swap');
+
+/* ✅ Fix universal reset selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Gujarati", sans-serif;
+}
+
+body {
+  background: #f4f7fa;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header .logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 18%;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #ff6600;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+}
+
+.card img.soda-img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  margin: 0 auto 10px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 8px 0;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.card p, a {
+  color: #007185;
+  cursor: pointer;
+}
+
+.card .bulk {
+  font-weight: bold;
+  color: #444;
+}
+
+/*  Individual Soda Themes */
+.card.jera {
+  background: #e6f7f5;
+  border-top: 6px solid #00a68c;
+}
+.card.jera h2 { color: #00796b; }
+
+.card.mango {
+  background: #fff4e6;
+  border-top: 6px solid #ffa500;
+}
+.card.mango h2 { color: #e68900; }
+
+.card.sprite {
+  background: #e6ffe6;
+  border-top: 6px solid #00cc44;
+}
+.card.sprite h2 { color: #008f2a; }
+
+.card.orange {
+  background: #ffece6;
+  border-top: 6px solid #ff6633;
+}
+.card.orange h2 { color: #cc3300; }
+
+.card.jera-big {
+  background: #f2f7ff;
+  border-top: 6px solid #3366ff;
+}
+.card.jera-big h2 { color: #003cb3; }
+
+.card.jera-premium {
+  background: #f9e6ff;
+  border-top: 6px solid #9900cc;
+}
+.card.jera-premium h2 { color: #660099; }
+
+/*  Mobile */
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+  .card h2 {
+    font-size: 1rem;
+  }
+  .card img.soda-img {
+    max-width: 120px;
+  }
+}
+
+/*  Tablet */
+@media (min-width: 501px) and (max-width: 900px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  .menu {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .card img.soda-img {
+    max-width: 150px;
+  }
+}
+
+/*  Laptop/Desktop */
+@media (min-width: 901px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+  .menu {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* 🔙 Back Button Style */
+.back-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 28px;
+  text-decoration: none;
+  background: none;
+  color: #ff6600; /* ✅ visible text color */
+  padding: 6px 12px;
+  border-radius: 18%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: background 0.3s, color 0.3s;
+  z-index: 1000;
+}
+
+.back-btn:hover {
+  background: #005fa3;
+  color: white;
+}
